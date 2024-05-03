@@ -50,9 +50,15 @@ sub{
     display: block;
     margin: 0 auto; 
 }
+.burger_menu_button{
+    display: none;
+}
 @media screen and (max-width: 767px){
     *{
         transition: 0s;
+    }
+    .burger_menu_button{
+        display: block;
     }
     .navigation_section{
         position: absolute;
@@ -108,24 +114,11 @@ sub{
     .logo_decor{
         display: none;
     }
+    .show{
+        visibility: visible;
+    }
+    .hide{
+        visibility: hidden;
+    }
     
-}
-
-
-
-
-main{
-    margin: 3.008rem 0 4.5rem 0;
-}
-
-
-
-
-
-
-.show{
-    visibility: visible;
-}
-.hide{
-    visibility: hidden;
 }
