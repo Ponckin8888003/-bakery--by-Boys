@@ -1,0 +1,131 @@
+/* Fonts */
+@font-face {
+    font-family: "Philosopher";
+    src: url(../fonts/Philosopher/Philosopher-Regular.ttf);
+}
+/*  */
+*{
+    transition: 0.15s;
+    box-sizing: border-box;
+}
+body{
+    background-color: #342321;
+}
+
+.navigation_section{
+    margin: 3.25rem 0 0 0;
+    display: grid;
+    place-items: center;
+}
+.navigation_menu{
+    list-style: none;
+    display: flex;
+    column-gap: 4.719rem;
+}
+.navigation_link{
+    text-decoration: none;
+    font-family: 'Philosopher';
+    font-size: 1.5rem;
+    color: #FCFCFC;
+}
+sub{
+    display: none;
+}
+.navigation_link:hover{
+    color: #800F2F;
+}
+.logo_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo_decor img{
+    width: 100%;
+}
+.logo{
+    padding: 1.528rem 2.75rem 1.528rem 2.75rem;
+    background-color: #342321;
+}
+.logo img{
+    display: block;
+    margin: 0 auto; 
+}
+@media screen and (max-width: 767px){
+    *{
+        transition: 0s;
+    }
+    .navigation_section{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 999;
+        margin: 0;
+
+        width: 100vw;
+        height: 100vh;
+        background-color: rgba(38, 38, 38, 0.65);
+    }
+    .navigation_menu{
+        background-color: #FEFAE0;
+       
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1.75rem;
+        
+
+        width: 91.20%;
+        height: 21.25rem;
+        border-radius: 8px;
+    }   
+    .navigation_link{
+        color: #161515;
+        font-size: 2.25rem;
+    }
+    .navigation_link sub{
+        display: inline-block;
+        font-size: 0.75rem;
+    }
+    .burger_menu_icon{
+        position: absolute;
+        z-index: 1000;
+        top: 1rem;
+        right: 1rem;
+
+        font-size: 2.25rem;
+        color: #F5F4F4;
+        cursor: pointer;
+    }
+    
+    .burger_menu_icon_close{
+        display: none;
+    }
+    
+    .logo_section{
+        display: block;
+    }
+    .logo_decor{
+        display: none;
+    }
+    
+}
+
+
+
+
+main{
+    margin: 3.008rem 0 4.5rem 0;
+}
+
+
+
+
+
+
+.show{
+    visibility: visible;
+}
+.hide{
+    visibility: hidden;
+}
