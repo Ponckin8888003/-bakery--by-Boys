@@ -3,6 +3,14 @@
     font-family: "Philosopher";
     src: url(../fonts/Philosopher/Philosopher-Regular.ttf);
 }
+@font-face {
+    font-family: "MontserratAlternates";
+    src: url(../fonts/MontserratAlternates/MontserratAlternates-Regular.ttf);
+}
+@font-face {
+    font-family: "Caveat";
+    src: url(../fonts/Caveat/Caveat-Regular.ttf);
+}
 /*  */
 *{
     transition: 0.15s;
@@ -122,3 +130,161 @@ sub{
     }
     
 }
+
+
+main{
+    margin: 3.008rem 0 4.5rem 0;
+    height: 32.375rem;
+    position: relative;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, 4.25rem); */
+}
+@media screen and (min-width: 768px){
+    
+    .background_img_section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    h1:first-child{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 7%;
+        left: 37%;
+        transform: translate(-50%, -7%);
+        margin-bottom: 5rem; 
+        padding-left: 7.78%;
+    }
+    h1:nth-child(2){
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 39%;
+        left: 36%;
+        transform: translate(-50%, -39%);
+        z-index: 999;
+    }
+    .subtitle_main_text_section{
+        position: absolute;
+        top: 75%;
+        right: 1%;
+        transform: translate(-10%, -75%);
+    }
+}
+h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    color: #F5F4F4;
+    letter-spacing: -0.011rem;
+    font-family: 'Philosopher';
+}
+.subtitle_main_text{
+    color: #F5F4F4;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.011rem;
+    margin-bottom: 1.5rem;
+    font-family: 'MontserratAlternates';
+}
+@media screen and (max-width: 767px){
+    h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .subtitle_main_text_01{
+        text-align: center;
+        font-size: 1.125rem;
+    }
+    .subtitle_main_text_02{
+        display: none;
+    }
+    .background_img_section img{
+        width: 15.938rem;
+        height: 16rem;
+        display: block;
+        margin: 0 auto;
+        object-fit: contain;
+        padding: 1.25rem 0 1.25rem 0;
+    }   
+}
+
+
+
+.our_advantages_section{
+    background-color: #FEFAE0;
+    padding: 2.5rem 4.375rem 9rem 4.375rem;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    row-gap: 3rem;
+
+    background-image: url(../img/advantages_decor.png);
+    background-repeat: no-repeat;
+    background-size: 40.69%;
+}
+h2{
+    font-family: 'Caveat';
+    font-size: 2.375rem;
+    line-height: 2.75rem;
+    color: #161515;
+    letter-spacing: -0.011rem;
+    margin-bottom: 1rem;
+}
+.advantages_text_section p{
+    font-family: 'MontserratAlternates';
+    font-size: 1.25rem;
+    color: #161515;
+    line-height: 1.5rem;
+    letter-spacing: -0.013rem;
+}
+.advantages_text_section_01{
+    grid-column: 7/13;
+    text-align: right;
+    border-left: 1px solid #800F2F;
+}
+.advantages_text_section_02{
+    grid-column: 6/12;
+    border-right: 1px solid #800F2F;
+}
+.advantages_text_section_03{
+    grid-column: 4/13;
+    text-align: right;
+}
+.advantages_text_section_04{
+    grid-column: 4/12;
+}
+.advantages_text_section_00{
+    display: none;
+}
+@media screen and (max-width: 767px){
+    .advantages_text_section_00{
+        display: block;
+        text-align: right;
+        grid-column: 1/9;
+    }
+    .advantages_text_section_01{
+        text-align: left;
+        grid-column: 1/9;
+        border: none;
+    }
+    .advantages_text_section_02, .advantages_text_section_03, .advantages_text_section_04{
+        display: none;
+    }
+    .our_advantages_section{
+        padding: 17.875rem 1rem 9rem 1rem;
+    
+        grid-template-columns: repeat(8, 1fr);
+        row-gap: 5rem;
+    
+        background-size: 72.27%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .advantages_text_section p{
+        font-size: 1rem;
+    }
+}
+
