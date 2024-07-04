@@ -383,3 +383,105 @@ h3:first-child{
         display: none;
     }
 }
+.bestsellers_section{
+    padding: 4rem 0 3.5rem 0;
+}
+h4{
+    font-size: 3.5rem;
+    margin-bottom: 4rem;
+    line-height: 4rem;
+    letter-spacing: -0.011rem;
+    font-family: 'Philosopher';
+    color: #F5F4F4;
+    text-align: center;
+}
+
+
+
+footer{
+    background-color: #FEFAE0;
+}
+footer{
+    padding: 2.75rem 0 3.813rem 0;
+}
+.footer_logo_section .logo{
+    background-color: transparent;
+}
+.footer_logo_section{
+    margin-bottom: 4.008rem;
+}
+.contact_information{
+    width: 80.83%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h5{
+    font-family: 'Philosopher';
+    color: #000000;
+    font-size: 2rem;
+    line-height: 2.25rem;
+    letter-spacing: -0.011rem;
+    margin-bottom: 1.375rem;
+}
+.contact_information_content{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    letter-spacing: -0.011rem;
+    color: #000000;
+    font-family: 'MontserratAlternates'; 
+}
+.contact_information_content_01, .contact_information_content_03{
+    margin-bottom: 1.375rem;
+}
+.number_information{
+    text-align: right;
+}
+.number_information a{
+    text-decoration: none;
+    color: #000000;
+}
+.social_networks_information{
+    display: grid;
+    row-gap: 0.5rem;
+}
+.social_networks_information a{
+    text-decoration: none;
+    color: #342321;
+}
+.social_networks_information svg{
+    font-size: 3rem;
+}
+@media screen and (max-width: 767px){
+    footer .logo_decor{
+        display: block;
+    }
+    footer .logo_section{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .contact_information{
+        width: 91.47%;
+    }
+    .number_information{
+        display: none;
+    }
+    .social_networks_information svg{
+        font-size: 2.25rem;
+    }
+    h5{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+        margin-bottom: 1.75rem;
+    }
+    .contact_information_content{
+        font-size: 1rem;
+        line-height: 1.25rem;
+    }
+    .contact_information_content_01{
+        margin-bottom: 1.75rem;
+    }
+}
